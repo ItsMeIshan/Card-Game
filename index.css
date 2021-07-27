@@ -1,0 +1,86 @@
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: serif;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#card-area {
+  color: white;
+  border-radius: 4.6px;
+  min-height: 90vh;
+  margin: 0 auto;
+  width: 50%;
+  /* max-width: 600px; */
+  background: linear-gradient(rgba(36, 43, 46, 0.7), transparent),
+    url("./img/table2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#button-draw {
+  margin: 0 auto;
+  width: 10%;
+  text-align: center;
+  align-self: stretch;
+}
+.link-to-button {
+  border-radius: 3.5px;
+  background-color: yellow;
+  font-size: 1.3rem;
+  padding: 0.4em 0.8em;
+  text-decoration: none;
+  color: black;
+}
+/* .images {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+div.card-slot {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 140px;
+  width: calc(140px * 5 / 7);
+}
+.card-slots {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+div.card-slot:nth-of-type(1) {
+  margin-bottom: 15px;
+}
+.card-slots :nth-child(1) {
+  order: 2;
+}
+.card-slots:nth-child(2) {
+  order: 4;
+}
+.card-slots:nth-child(4) {
+  margin-bottom: 0px;
+}
+#card-area:nth-of-type(1) {
+  margin-top: 0;
+}
+#card-area h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.disabled {
+  color: rgba(0, 0, 0, 0.548);
+  background-color: rgba(255, 255, 0, 0.281);
+}
